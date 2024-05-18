@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+#calculator {
+    max-width: 700px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+
+#div-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-display input {
+    width: 85%;
+    height: 60px;
+    margin-top: 10px;
+    border: none;
+    font-size: 1.8rem;
+}
+
+#keys {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-calculate {
+    background-color: greenyellow;
+    color: white;
+    grid-column: 2 span; /* Faz o botão ocupar duas colunas */
+    width: calc(80px * 2 + 10px); /* Dobrar a largura e considerar o gap entre as colunas */
+}
